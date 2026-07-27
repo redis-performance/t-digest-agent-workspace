@@ -1,0 +1,29 @@
+# Build artifacts
+build/
+t-digest-c/build/
+**/CMakeCache.txt
+**/CMakeFiles/
+
+# Fuzzer output: raw crash artifacts and grown corpora. Anything worth keeping
+# is minimized and promoted into t-digest-c/tests/fuzz/regressions/.
+security/crashes/
+fuzz-*.log
+crash-*
+leak-*
+timeout-*
+oom-*
+
+# perf data (large binary files)
+*.data
+perf.data*
+
+# Local claude settings (credentials, env vars) — never commit
+.claude/settings.local.json
+
+# Editor
+.vscode/
+*.swp
+
+# Python bytecode
+__pycache__/
+*.pyc
