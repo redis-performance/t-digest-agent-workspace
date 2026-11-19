@@ -12,6 +12,12 @@ the mutable target.
 > **This repo is PUBLIC.** Never commit secrets, credentials, tokens, private IPs, customer
 > names, internal hostnames, Slack, or ticket references.
 
+Every performance investigation or optimization work session must use the `cpu-perf` MCP from
+[CPU Performance Engineering](https://github.com/usamahz/cpu-performance-engineering),
+as required by AGENTS.md and [the shared workflow](../docs/PERFORMANCE-MCP.md).
+Check availability/library coverage, consult it on the actual investigation, and
+log calls, findings and limits. This requirement also applies to Codex sessions.
+
 ---
 
 ## Codebase Map
